@@ -5,8 +5,11 @@ import store from './store'
 import Vant from 'vant'
 import 'vant/lib/index.less'
 import 'amfe-flexible'
-import '@/style/icon.less'
-
+// import '@/style/icon.less'
+import MyIcon from '@/components/MyIcon.vue'
+// import '@/style/reset.less'
+import '@/style/index.less'
+Vue.component('MyIcon', MyIcon)
 Vue.use(Vant)
 Vue.config.productionTip = false
 
