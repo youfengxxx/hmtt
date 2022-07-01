@@ -1,6 +1,7 @@
 <template>
   <div>
-    <router-view class="main"/>
+    <keep-alive :include="['Home']">
+    <router-view class="main"/>    </keep-alive>
     <van-tabbar route>
       <van-tabbar-item replace to="/home" icon="home-o">
         首页<i class="toutiao toutiao-shouye" slot="icon"></i>
@@ -15,6 +16,7 @@
         >我的<i class="toutiao toutiao-wode" slot="icon"></i
       ></van-tabbar-item>
     </van-tabbar>
+
   </div>
 </template>
 
